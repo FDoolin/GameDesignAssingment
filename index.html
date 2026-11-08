@@ -1,1 +1,218 @@
-<p>Hello World</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Hotel Dracula</title>
+
+    <style>
+        /* Basic page settings */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #222;
+            background-color: #ffffff;
+        }
+
+        /* Left-hand sidebar */
+        .sidebar {
+            width: 300px;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: #f1f2f6;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+
+        .sidebar h1 {
+            font-family: Georgia, serif;
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+
+        /* Main content area */
+        .main-content {
+            margin-left: 300px;
+            padding: 35px;
+        }
+
+        .about-text {
+            max-width: 900px;
+            line-height: 1.8;
+            color: #555;
+            font-size: 20px;
+        }
+
+        .game-name {
+            color: #ff3675;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .section-heading {
+            margin-top: 45px;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        /* The project cards */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 35px 30px;
+            max-width: 900px;
+            margin-top: 35px;
+        }
+
+        .card {
+            min-height: 165px;
+            padding: 25px 22px;
+            background-color: white;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            border-bottom: 2px solid #278cff;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .card a {
+            text-decoration:none;
+        }
+
+
+        .blue {
+            color: #278cff;
+            border-color: #278cff;
+        }
+
+        .blue a{
+            color: #278cff;
+        }
+
+        .red {
+            color: #ff5555;
+            border-color: #ff5555;
+        }
+
+        .red a{
+            color: #ff5555;
+        }
+
+        .orange {
+            color: #ffad24;
+            border-color: #ffad24;
+        }
+
+        .orange a{
+            color: #ffad24;
+        }
+
+        .purple {
+            color: #b34bc7;
+            border-color: #b34bc7;
+        }
+
+        .purple a{
+            color: #b34bc7;
+        }
+
+        .green {
+            color: #15ff00;
+            border-color: #15ff00;
+        }
+
+        .green a{
+            color: #15ff00;
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+
+
+    <div class="sidebar">
+        <h1 class="game-name"> Hotel Dracula</h1>
+        <h1> a Game by </h1>
+        <h2>Fionn Doolin</h2>
+        <h2>Steven Condra</h2>
+        <h2>Lucas Young</h2>
+        <h2>Samuel Mathias</h2>
+        
+
+    </div>
+
+
+    <div class="main-content">
+
+        <section id="about" class="about-text">
+            <h1> About</h1>
+            <p> <span class="game-name">Hotel Dracula</span> is the name of the game concept we created for our 2nd year assigment in the introduction to Game Design module at SETU Waterford.</p>
+        </section>
+
+        <section id="project-links">
+            <h2 class="section-heading">Component Links</h2>
+
+            <div class="card-container">
+                <div class="card orange">
+                    <a href="https://trello.com/invite/b/6ad72372a9d824041670b6a7/ATTId8802d37580888dbc28ba7755b1db36244600921/countdown">
+                        <i class="material-icons">lightbulb_2</i>
+                        
+                        <h3><br>Brainstorming Session</h3>
+                    </a>
+                </div>
+
+                <div class="card red">
+                    <a href="https://trello.com/invite/b/6aec471dd853bf4b65344b9f/ATTIc4fd69d386bb6184e507c94eaccdea4bA7813ADD/scrum-board">
+                        <i class="material-icons">event_note</i>
+                        <h3><br>Scrum Board</h3>
+                    </a>
+                </div>
+
+                <div class="card green">
+                    <a href="https://www.youtube.com/">
+                        <i class="material-icons">play_arrow</i>
+                        <h3><br>Pitch Video</h3>
+                    </a>
+                </div>
+
+                <div class="card purple">
+                    <a href="https://www.youtube.com/"></a>
+                        <i class="material-icons">web_stories</i>
+                        <h3><br>Pitch Slides</h3>
+                    </a>
+                </div>
+
+                <div class="card blue">
+                    <a href="https://www.youtube.com/">
+                        <i class="material-icons">description</i>
+                        <h3><br>Word Document</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
